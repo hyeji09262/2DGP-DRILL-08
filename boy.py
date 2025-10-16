@@ -58,6 +58,9 @@ class AutoRun:
         self.boy.velocity = 0
 
     def do(self):
+        self.boy.frame = (self.boy.frame + 1) % 8
+        self.boy.x += self.boy.dir * self.boy.velocity
+
 
     def draw(self)
         if self.boy.face_dit == 1:
