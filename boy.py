@@ -62,11 +62,11 @@ class AutoRun:
         self.boy.x += self.boy.dir * self.boy.velocity
 
 
-    def draw(self)
+    def draw(self):
         if self.boy.face_dit == 1:
-            self.boy.image.clip_draw(self.boy.frame * 100, 100, 100, 100, self.boy.x, self.boy.y,w,h)
+            self.boy.image.clip_draw(self.boy.frame * 100, 100, 100, 100, self.boy.x, self.boy.y,100*self.boy.scale,100*self.boy.scale)
         else:
-            self.boy.image.clip_draw(self.boy.frame * 100, 0, 100, 100, self.boy.x, self.boy.y,w,h)
+            self.boy.image.clip_draw(self.boy.frame * 100, 0, 100, 100, self.boy.x, self.boy.y,100*self.boy.scale,100*self.boy.scale)
 
 class Sleep:
 
