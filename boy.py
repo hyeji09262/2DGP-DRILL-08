@@ -59,8 +59,11 @@ class AutoRun:
 
     def do(self):
 
-    def draw(self):
-        pass
+    def draw(self)
+        if self.boy.face_dit == 1:
+            self.boy.image.clip_draw(self.boy.frame * 100, 100, 100, 100, self.boy.x, self.boy.y,w,h)
+        else:
+            self.boy.image.clip_draw(self.boy.frame * 100, 0, 100, 100, self.boy.x, self.boy.y,w,h)
 
 class Sleep:
 
