@@ -47,7 +47,11 @@ class AutoRun:
     def __init__(self,boy):
         self.boy = boy
 
+
     def enter(self,e):
+        self.boy.dir = 1
+        self.boy.velocity = 5
+        self.boy.size = 1.5
 
     def exit(self,e):
 
