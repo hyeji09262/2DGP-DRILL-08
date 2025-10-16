@@ -20,6 +20,9 @@ def space_down(e):
 def Time_out(e):
     return e[0] == 'TIME_OUT'
 
+def a_down(e):
+    return e[0] == 'INPUT' and e[1].type == SDL_KEYDOWN and e[1].key == SDLK_a
+
 class Run:
     def __init__(self, boy):
         self.boy = boy
