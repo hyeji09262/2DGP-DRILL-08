@@ -127,6 +127,8 @@ class Boy:
         self.frame = 0
         self.face_dir = 1
         self.dir = 0
+        self.velocity = 0
+        self.size = 1.0
         self.image = load_image('animation_sheet.png')
 
         self.IDLE = Idle(self)
