@@ -52,9 +52,10 @@ class AutoRun:
         self.start_time = 0
 
 
-    def enter(self,e)
+    def enter(self,e):
         self.start_time = get_time()
         self.boy.dir = 1
+        self.boy.face_dir = 1
         self.boy.velocity = 5
         self.boy.size = 1.5
 
