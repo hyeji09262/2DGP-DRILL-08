@@ -44,7 +44,8 @@ class Run:
             self.boy.image.clip_draw(self.boy.frame * 100, 0, 100, 100, self.boy.x, self.boy.y)
 
 class AutoRun:
-    def __init__(self):
+    def __init__(self,boy):
+        self.boy = boy
         pass
 
 class Sleep:
