@@ -46,6 +46,14 @@ class Run:
 class AutoRun:
     def __init__(self,boy):
         self.boy = boy
+
+    def enter(self,e):
+
+    def exit(self,e):
+
+    def do(self):
+
+    def draw(self):
         pass
 
 class Sleep:
