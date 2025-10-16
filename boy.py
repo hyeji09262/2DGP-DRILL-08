@@ -54,6 +54,8 @@ class AutoRun:
         self.boy.size = 1.5
 
     def exit(self,e):
+        self.boy.size = 1.0
+        self.boy.velocity = 0
 
     def do(self):
 
