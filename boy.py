@@ -49,9 +49,11 @@ class Run:
 class AutoRun:
     def __init__(self,boy):
         self.boy = boy
+        self.start_time = 0
 
 
-    def enter(self,e):
+    def enter(self,e)
+        self.start_time = get_time()
         self.boy.dir = 1
         self.boy.velocity = 5
         self.boy.size = 1.5
@@ -144,7 +146,7 @@ class Boy:
                 self.Sleep: {space_down: self.IDLE},
                 self.IDLE : {right_up : self.Run, left_up : self.Run, left_down : self.Run, right_down : self.Run, Time_out : self.Sleep},
                 self.Run : {left_down : self.IDLE, right_down : self.IDLE, left_up : self.IDLE, right_up : self.IDLE},
-                self.AutoRun: {Time_out : self.IDLE, left_down: self.Run, right_down: self.IDLE, left_up: self.Run, right_down: self.Run}
+                self.AutoRun: {Time_out : self.IDLE, left_down: self.Run, right_up: self.IDLE, left_up: self.Run, right_down: self.Run}
             }
         )
 
