@@ -68,7 +68,7 @@ class AutoRun:
         elif self.boy.x < 0:
             self.boy.x = 0
             self.boy.dir = 1
-            self.boy.face_dir =
+            self.boy.face_dir = 1
 
     def draw(self):
         if self.boy.face_dit == 1:
