@@ -134,6 +134,7 @@ class Boy:
         self.IDLE = Idle(self)
         self.Sleep = Sleep(self)
         self.Run = Run(self)
+        self.AutoRun = AutoRun(self)
         self.state_machine = StateMachine(
             self.IDLE,
             {
